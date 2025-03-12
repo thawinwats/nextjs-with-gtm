@@ -1,8 +1,14 @@
 'use client'
 
 import { sendGTMEvent } from '@next/third-parties/google'
+import { Metadata } from 'next';
 import Link from 'next/link'
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Docs | Next App with GTM",
+  description: "Test GTM with next app",
+};
 
 export default function Docs() {
   return (
